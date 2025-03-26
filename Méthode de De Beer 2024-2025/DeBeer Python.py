@@ -109,7 +109,7 @@ D = 600  # mm
 Zw = 3.3  # m
 
 # Importation de Z et qc
-ExcelDeBeer = pd.read_excel("/Users/damien/Documents/Master_1_Mac/Ouvrages_Geotechniques/Projet_Striga/Méthode de De Beer 2024-2025/MethodeDeBeer.xlsx", sheet_name="Calculs", usecols="A:B")
+ExcelDeBeer = pd.read_excel("/workspaces/OuvragesGeotechniques/Méthode de De Beer 2024-2025/MethodeDeBeer.xlsx", sheet_name="Calculs", usecols="A:B")
 
 # Iterate through the transposed DataFrame to extract each column
 columns = {}
@@ -310,7 +310,7 @@ dg_save = dg_save[0:RealZlen]
 qc = qc[0:RealZlen]
 
 # Sauvetage dans l'excel
-wb = load_workbook("/Users/damien/Documents/Master_1_Mac/Ouvrages_Geotechniques/Projet_Striga/Méthode de De Beer 2024-2025/MethodeDeBeer.xlsx")
+wb = load_workbook("/workspaces/OuvragesGeotechniques/Méthode de De Beer 2024-2025/MethodeDeBeer.xlsx")
 ws = wb["Calculs"]
 
 for i in range(len(Z)):
